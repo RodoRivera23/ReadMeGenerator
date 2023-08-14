@@ -57,7 +57,6 @@ function init() {
         ])
         .then((response) => {
             const markdown = generate(response);
-            console.log(response.license[0]);
             return fs.writeFile('README.md', markdown, (err) => err ? console.error(err) : console.log('Commit logged!'));
         });
 }
