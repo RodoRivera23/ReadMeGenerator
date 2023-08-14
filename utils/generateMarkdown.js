@@ -50,40 +50,40 @@ function generateMarkdown(data) {
     let badgeUrl = renderLicenseLink(data.license[0])
     return `# ${data.title}
 
-  ## Table of Contents:
-  1. [Description](#Description) 
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)  
-  4. [Contributing](#Contributing)
-  5. [Tests](#Tests)
-  6. [License](#License)
-  7. [GitHub](#github)
-  8. [E-mail](#email)
+    ## Table of Contents:
+    1. [Description](#Description) 
+    2. [Installation](#Installation)
+    3. [Usage](#Usage)  
+    4. [Contributing](#Contributing)
+    5. [Tests](#Tests)
+    6. [License](#License)
+    7. [GitHub](#github)
+    8. [E-mail](#email)
 
-  ## Description
-  ${data.description} 
+    ## Description
+    ${data.description} 
 
-  ## Installation
-  ${data.installation}
+    ## Installation
+    ${data.installation}
 
-  ## Usage
+    ## Usage
 
-  ${data.usage}
+    ${data.usage}
 
-  ## Contributing
-  ${data.contributing}
+    ## Contributing
+    ${data.contributing}
 
-  ## Tests
-  ${data.tests}
+    ## Tests
+    ${data.tests}
 
-  ## License
-  This project is licensed under ${data.license[0]} license ${badge} - License page: ${badgeUrl}
+    ## License
+    This project is licensed under ${data.license[0]} license ${badge} - License page: ${badgeUrl}
 
-  ## GitHub
-  ${data.github}
+    ## GitHub
+    ${data.github}
 
-  ## E-mail
-  ${data.email}`;
+    ## E-mail
+    ${data.email}`;
 }
 
 module.exports = generateMarkdown;
