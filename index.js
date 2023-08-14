@@ -57,7 +57,7 @@ function init() {
         ])
         .then((response) => {
             const markdown = generate(response);
-            return fs.writeFile('README.md', markdown, (err) => err ? console.error(err) : console.log('Commit logged!'));
+            return fs.writeFile('README.md', markdown, (err) => err ? console.error(err) : console.log('README created!'));
         });
 }
 // Function call to initialize app
