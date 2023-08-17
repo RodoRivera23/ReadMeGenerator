@@ -1,36 +1,35 @@
-# ReadMe Generator
+# r
+## Table of Contents
 
-    ## Table of Contents:
-    1. [Description](#Description) 
-    2. [Installation](#Installation)
-    3. [Usage](#Usage)  
-    4. [Contributing](#Contributing)
-    5. [Tests](#Tests)
-    6. [License](#License)
-    7. [GitHub](#github)
-    8. [E-mail](#email)
+[Description](#description)
 
-    ## Description
-    This is a project to help the user to create a README file for your project 
+[Install](#install)
 
-    ## Installation
-    First you need to donwload the project; open the project; open the terminal and navigate to project folder; install inquirer package w 
+[Use](#use)
 
-    ## Usage
+[Contribute](#contribute)
 
-    write node index.js in terminal and anwser the questions
+[Test](#test)
 
-    ## Contributing
-    accessing to project repo at Github
+[License](#license)
 
-    ## Tests
-    you can create README file with differents licenses
+[GitHub](#github)
 
-    ## License
-    This project is licensed under Apache License 2.0 license https://img.shields.io/static/v1?label=license&message=Apache+2.0&color=blue) - License page: https://choosealicense.com/licenses/apache-2.0/
+[Email](#email)
 
-    ## GitHub
-    RodoRivera23
-
-    ## E-mail
-    rudy_roddick@msn.com
+## Description
+r
+## Install
+r
+## Use
+r
+## Contribute
+r
+## Test
+r
+## License
+The project is licensed under the MIT License - See the MIT License info https://choosealicense.com/licenses/mit/
+## Github
+r
+## Email
+r

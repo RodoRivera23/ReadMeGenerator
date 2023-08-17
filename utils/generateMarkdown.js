@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
         badge = { name: "GNU+GPLv3", color: "blue" };
     }
 
-    return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color})`;
+    return `https://img.shields.io/static/v1?label=license&message=${badge.name}&color=${badge.color}`;
 }
 
 // TODO: Create a function that returns the license link
@@ -48,41 +48,34 @@ function renderLicenseLink(license) {
 function generateMarkdown(data) {
     let badge = renderLicenseBadge(data.license[0])
     let badgeUrl = renderLicenseLink(data.license[0])
-    return `# ${data.title}
-
-    ## Table of Contents:
-    1. [Description](#Description) 
-    2. [Installation](#Installation)
-    3. [Usage](#Usage)  
-    4. [Contributing](#Contributing)
-    5. [Tests](#Tests)
-    6. [License](#License)
-    7. [GitHub](#github)
-    8. [E-mail](#email)
-
-    ## Description
-    ${data.description} 
-
-    ## Installation
-    ${data.installation}
-
-    ## Usage
-    ${data.usage}
-
-    ## Contributing
-    ${data.contributing}
-
-    ## Tests
-    ${data.tests}
-
-    ## License
-    This project is licensed under ${data.license[0]} license ${badge} - License page: ${badgeUrl}
-
-    ## GitHub
-    ${data.github}
-
-    ## E-mail
-    ${data.email}`;
+    let result = (`# ${data.title}
+## Table of Contents\n
+[Description](#description)\n
+[Install](#install)\n
+[Use](#use)\n
+[Contribute](#contribute)\n
+[Test](#test)\n
+[License](#license)\n
+[GitHub](#github)\n
+[Email](#email)\n
+## Description
+${data.description}
+## Install
+${data.installation}
+## Use
+${data.usage}
+## Contribute
+${data.contributing}
+## Test
+${data.tests}
+## License
+The project is licensed under the ${data.license[0]} - See the ${data.license[0]} info ${badgeUrl}
+## Github
+${data.github}
+## Email
+${data.email}
+`);
+    return result;
 }
 
 module.exports = generateMarkdown;
